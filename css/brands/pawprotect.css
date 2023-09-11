@@ -1,0 +1,5 @@
+.companyLogo[data-tenant-branding-logo="true"]:before {
+    width: 242px;
+    height: 44px;
+    background-image: url('https://epiassets.azureedge.net/assets/whitelabel/logos/pawprotect.png');
+}

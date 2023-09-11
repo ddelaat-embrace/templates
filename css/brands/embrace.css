@@ -1,11 +1,4 @@
-body {
-    background: #fff;
-    font: 400 100%/1.4 "Gotham Narrow A","Gotham Narrow B","Gotham Narrow","Helvetica Neue","Arial",sans-serif;
-    color: #333;
-}
 .companyLogo[data-tenant-branding-logo="true"]:before {
-    content: "";
-    display: block;
     width: 209px;
     height: 60px;
     background-image: url('https://epicdn.blob.core.windows.net/assets-dev/whitelabel/logos/myembrace.png');
