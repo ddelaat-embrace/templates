@@ -1,4 +1,12 @@
-.companyLogo[data-tenant-branding-logo="true"]:before {
+body {
+    --brandPrimary: #511e78;
+    --brandPrimary_s10: #d1c9e7;
+    --brandPrimary_s25: #efecf7;
+    --brandSecondary: var(--brandPrimary);
+    --brandAccent: #f4bd64;
+    --brandAccentContrast: #333;
+}
+.companyLogo:before {
     width: 209px;
     height: 60px;
     background-image: url('https://epicdn.blob.core.windows.net/assets-dev/whitelabel/logos/myembrace.png');

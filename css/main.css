@@ -1,3 +1,12 @@
+:root {
+    --brandWarn: #cc413d;
+    --brandWarnDark: #ae3236;
+    --brandWarnLight: #ed584f;
+    --brandWarn_s10: #faebeb;
+    --brandSuccess: #009500;
+    --brandSuccess_s50: #80ca80;
+    --brandSuccess_s10: #e6f4e6;
+}
 body {
     background: #fff;
     font: 400 100%/1.4 "Gotham Narrow A","Gotham Narrow B","Gotham Narrow","Helvetica Neue","Arial",sans-serif;
@@ -8,4 +17,7 @@ body {
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.row .panel-default #api .localAccount .entry .buttons button {
+    background-color: var(--brandPrimary);
 }

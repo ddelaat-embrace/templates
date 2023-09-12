@@ -1,4 +1,12 @@
-.companyLogo[data-tenant-branding-logo="true"]:before {
+body {
+    --brandPrimary: #243676;
+    --brandPrimary_s10: #b8c2e5;
+    --brandPrimary_s25: #e4e8f9;
+    --brandSecondary: var(--brandPrimary);
+    --brandAccent: #d5f123;
+    --brandAccentContrast: #333;
+}
+.companyLogo:before {
     width: 242px;
     height: 44px;
     background-image: url('https://epiassets.azureedge.net/assets/whitelabel/logos/pawprotect.png');
