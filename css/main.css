@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
 }
 #api .buttons button {
-    background-color: var(--brandPrimary) !important;
+    background-color: var(--brandAccent) !important;
 }
 #api .buttons button#cancel {
     background-color: transparent !important;
