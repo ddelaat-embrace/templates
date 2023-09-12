@@ -18,6 +18,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.row .panel-default #api .localAccount .entry .buttons button {
-    background-color: var(--brandPrimary);
+.buttons button {
+    background-color: var(--brandPrimary) !important;
 }
