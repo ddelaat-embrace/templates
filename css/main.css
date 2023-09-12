@@ -21,6 +21,6 @@ body {
 #api .buttons button {
     background-color: var(--brandPrimary) !important;
 }
-.buttons #cancel {
+#api .buttons button #cancel {
     background-color: transparent !important;
 }
