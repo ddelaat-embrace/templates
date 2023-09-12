@@ -20,6 +20,7 @@ body {
 }
 #api .buttons button {
     background-color: var(--brandAccent) !important;
+    color: var(--brandAccentContrast) !important;
 }
 #api .buttons button#cancel {
     background-color: transparent !important;
