@@ -18,6 +18,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.buttons button {
+#api .buttons button {
     background-color: var(--brandPrimary) !important;
 }
