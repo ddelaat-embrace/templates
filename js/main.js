@@ -10,11 +10,17 @@ linkElement.rel = "stylesheet";
 linkElement.href = cssURL;
 document.head.appendChild(linkElement);
 
-//--append the same brand param to any existing links
-window.addEventListener('DOMContentLoaded', function () {
+function handleDOMContentLoaded() {
+    //--append the same brand param to any existing links
     document.querySelectorAll('a').forEach(linkElement => {
         const linkUrl = new URL(linkElement.href, window.location.href);
         linkUrl.searchParams.set('brand', brand);
         linkElement.href = linkUrl.toString();
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+} else {
+    handleDOMContentLoaded();
+}
