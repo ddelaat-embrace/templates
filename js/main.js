@@ -19,15 +19,19 @@ function handlePageLoad() {
     });
 }
 
+function delayedHandlePageLoad() {
+    setTimeout(handlePageLoad, 500);
+}
+
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', handlePageLoad);
+    document.addEventListener('DOMContentLoaded', delayedHandlePageLoad);
 } else {
-    handlePageLoad();
+    delayedHandlePageLoad();
 }
 
 // This will catch when a page is shown from the bfcache (e.g. back button press)
 window.addEventListener('pageshow', function(event) {
     if (event.persisted) { // this indicates if the webpage was loaded from cache or not
-        handlePageLoad();
+        delayedHandlePageLoad();
     }
 });
