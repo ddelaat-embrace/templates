@@ -10,7 +10,7 @@ linkElement.rel = "stylesheet";
 linkElement.href = cssURL;
 document.head.appendChild(linkElement);
 
-function handleDOMContentLoaded() {
+function handlePageLoad() {
     //--append the same brand param to any existing links
     document.querySelectorAll('a').forEach(linkElement => {
         const linkUrl = new URL(linkElement.href, window.location.href);
@@ -20,7 +20,14 @@ function handleDOMContentLoaded() {
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+    document.addEventListener('DOMContentLoaded', handlePageLoad);
 } else {
-    handleDOMContentLoaded();
+    handlePageLoad();
 }
+
+// This will catch when a page is shown from the bfcache (e.g. back button press)
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) { // this indicates if the webpage was loaded from cache or not
+        handlePageLoad();
+    }
+});
